@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* ==========GLOBAL CSS============================================================================================ */
+:root {
+    --color-primary:#7380ec;
+    --color-primary-variant:#111e88;
+    --color-dark:#363949;
+    --color-dark-variant:#677483;
+    --color-fist:#ec7373;
+    --color-second:#73eca5;
+    --color-third:#ecd073;
+    --color-white:#f8f8f8;
+    --color-black:#000000;
+    --color-gray:#29292b;
+    --color-gray-two:#49494b;
+    --background-color:#f1f1f3;
+
+    --color-light:rgba(132,139,200, 0.18);
+
+    --card-border-radius: 24px;
+    --border-radius-1:7px;
+    --border-radius-2:13px;
+    --border-radius-3:19px;
+
+    --card-padding:22px;
+    --pading-1:19px;
+
+
+    --box-shadow:0 24px 42px var(--color-light);
+    
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-color);
+    user-select: none;/*Nusxalashni cheklash,Tanlashni cheklash*/
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Ubuntu",sans-serif;
+}
+
+
+html{
+    font-size: 14px;
+}
+a{
+    color: var(--color-dark);
+}
+.imglogo{
+display: block;
+width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 29px;
+}
+h2{
+    font-size: 23px;
+}
+h3{
+    font-size: 15px;
+}
+h4{
+    font-size: 14.5px;
+}
+h5{
+    font-size: 13px;
+}
+h6{
+    font-size: 12px;
+}
