@@ -1,94 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="./css/main.css"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <title>DevBlog Dashboard</title>
+    <title>Admin Panel | SevaraDevoloper</title>
 </head>
-
 <body>
-        <div class="dev">
-            <div class="container">
-                <div class="dev__container">
-                    <aside class="aside">
-                        <div class="top">
-                            <div class="logo">
-                                <div class="logo__image">
-                                    <span class="material-icons-sharp imglogo">computer</span>
-                                </div>
-                                <span>
-                                    <h1>DevBlog</h1>
-                                    <p>SevaraDevoloper</p>
-                                </span>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="sidebar__top">
+                <div class="logo">
+                    <span class="material-icons-sharp logo__image">computer</span>
+                    <div>
+                        <h1>DevBlog</h1>
+                        <p>SevaraDevoloper</p>
+                    </div>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar__menu">
+                <a href="#" class="sidebar__item sidebar__item--active" data-section="dashboard">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="customers">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="orders">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="analytics">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="messages">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Message</h3>
+                    <span class="message__count">26</span>
+                </a>
+                <a href="#" class="sidebar__item" data-section="products">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="reports">
+                    <span class="material-icons-sharp">report_problem</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="settings">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="add-product">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#" class="sidebar__item" data-section="logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main class="main-content">
+            
+            <section id="dashboard" class="content-section content-section--active">
+                <h1 class="main-content__heading">Dashboard</h1>
+
+                <div class="main-content__insights">
+                    <div class="insight-card sales">
+                        <span class="insight-card__icon material-icons-sharp">analytics</span>
+                        <div class="insight-card__middle">
+                            <div class="insight-card__left">
+                                <h3 class="insight-card__title">Total Sales</h3>
+                                <h1 class="insight-card__value">$25,000</h1>
                             </div>
-                            <div class="close" id="clode-btn">
-                                <span class="material-icons-sharp">close</span>
+                            <div class="insight-card__progress">
+                                <svg class="insight-card__svg">
+                                    <circle class="insight-card__circle" cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="insight-card__number"><p>81%</p></div>
                             </div>
                         </div>
+                        <small class="insight-card__time">Last 24 Hours</small>
+                    </div>
 
-                        <div class="sidebar">
-                            <a href="#" class="active">
-                                <span class="material-icons-sharp">grid_view</span>
-                                <h3>Dashboard</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">person_outline</span>
-                                <h3>Customers</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">receipt_long</span>
-                                <h3>Order</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">insights</span>
-                                <h3>Analytics</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">mail_outline</span>
-                                <h3>Message</h3>
-                                <span class="message__count">26</span>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">inventory</span>
-                                <h3>Products</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">report_problem</span>
-                                <h3>Rerports</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">settings</span>
-                                <h3>Settings</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">add</span>
-                                <h3>Add Product</h3>
-                            </a>
-
-                            <a href="#">
-                                <span class="material-icons-sharp">logout</span>
-                                <h3>Logout</h3>
-                            </a>
+                    <div class="insight-card expenses">
+                        <span class="insight-card__icon material-icons-sharp">bar_chart</span>
+                        <div class="insight-card__middle">
+                            <div class="insight-card__left">
+                                <h3 class="insight-card__title">Total Expenses</h3>
+                                <h1 class="insight-card__value">$14,000</h1>
+                            </div>
+                            <div class="insight-card__progress">
+                                <svg class="insight-card__svg">
+                                    <circle class="insight-card__circle" cx="38" cy="38" r="36" stroke-dashoffset="65"></circle>
+                                </svg>
+                                <div class="insight-card__number"><p>62%</p></div>
+                            </div>
                         </div>
-                    </aside>
+                        <small class="insight-card__time">Last 24 Hours</small>
+                    </div>
+                    
+                    <div class="insight-card income">
+                        <span class="insight-card__icon material-icons-sharp">stacked_line_chart</span>
+                        <div class="insight-card__middle">
+                            <div class="insight-card__left">
+                                <h3 class="insight-card__title">Total Income</h3>
+                                <h1 class="insight-card__value">$10,000</h1>
+                            </div>
+                            <div class="insight-card__progress">
+                                <svg class="insight-card__svg">
+                                    <circle class="insight-card__circle" cx="38" cy="38" r="36" stroke-dashoffset="100"></circle>
+                                </svg>
+                                <div class="insight-card__number"><p>44%</p></div>
+                            </div>
+                        </div>
+                        <small class="insight-card__time">Last 24 Hours</small>
+                    </div>
+                </div>
+                <div class="recent-orders">
+                    <h2 class="recent-orders__heading">Recent Orders</h2>
+                    <table class="recent-orders__table">
+                        <thead><tr><th>Product Name</th><th>Product Number</th><th>Payment</th><th>Status</th><th></th></tr></thead>
+                        <tbody>
+                            <tr><td>Foldable Mini Drone</td><td>85631</td><td>Due</td><td class="status--warning">Pending</td><td>Details</td></tr>
+                            <tr><td>Larvender KN-55</td><td>36378</td><td>Refunded</td><td class="status--danger">Declined</td><td>Details</td></tr>
+                            <tr><td>Ruko F11 Pro Drone</td><td>49347</td><td>Paid</td><td class="status--success">Active</td><td>Details</td></tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="recent-orders__show-all">Show All</a>
+                </div>
+                </section>
+            
+            <section id="customers" class="content-section"><h1 class="main-content__heading">Customers</h1><p>Customer data will load here.</p></section>
+            <section id="orders" class="content-section"><h1 class="main-content__heading">Orders</h1><p>Detailed order list will load here.</p></section>
+            <section id="analytics" class="content-section"><h1 class="main-content__heading">Analytics</h1><p>Analytics charts will load here.</p></section>
+            <section id="messages" class="content-section"><h1 class="main-content__heading">Messages</h1><p>Your inbox will load here.</p></section>
+            <section id="products" class="content-section"><h1 class="main-content__heading">Products</h1><p>Product management will load here.</p></section>
+            <section id="reports" class="content-section"><h1 class="main-content__heading">Reports</h1><p>System reports will load here.</p></section>
+            <section id="settings" class="content-section"><h1 class="main-content__heading">Settings</h1><p>Settings form will load here.</p></section>
+            <section id="add-product" class="content-section"><h1 class="main-content__heading">Add Product</h1><p>Product creation form will load here.</p></section>
+            <section id="logout" class="content-section"><h1 class="main-content__heading">Logout</h1><p>Tizimdan chiqish uchun tasdiqlang.</p><button class="logout-confirm">Chiqish</button></section>
+
+        </main>
+        <div class="right-panel">
+            <div class="right-panel__top">
+                <button id="menu-btn" class="menu-button">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <div class="theme-toggler">
+                    <span class="theme-toggler__icon material-icons-sharp theme-toggler__icon--active">light_mode</span>
+                    <span class="theme-toggler__icon material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="profile__info">
+                        <p>Hey, <b>Sevara</b></p>
+                        <small class="profile__role">Admin</small>
+                    </div>
+                    <div class="profile__photo">
+                        <img src="./img/user3.svg" alt="Profile Picture"> 
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2 class="recent-updates__heading">Recent Updates</h2>
+                <div class="recent-updates__list">
+                    <div class="update-item">
+                        <div class="update-item__photo"><img src="./img/user1.svg" alt=""></div>
+                        <div class="update-item__message">
+                            <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone.</p>
+                            <small>2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-item__photo"><img src="./img/user2.svg" alt=""></div>
+                        <div class="update-item__message">
+                            <p><b>Sam Smith</b> received his order of Foldable Mini Drone.</p>
+                            <small>5 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-analytics">
+                <h2 class="sales-analytics__heading">Sales Analytics</h2>
+                <div class="sales-item online">
+                    <div class="sales-item__icon-container"><span class="material-icons-sharp">shopping_cart</span></div>
+                    <div class="sales-item__info"><h3>ONLINE ORDERS</h3><small>Last 24 Hours</small></div>
+                    <h5 class="sales-item__percentage">+39%</h5><h3>3849</h3>
+                </div>
+                
+                <div class="sales-item offline">
+                    <div class="sales-item__icon-container"><span class="material-icons-sharp">local_mall</span></div>
+                    <div class="sales-item__info"><h3>OFFLINE ORDERS</h3><small>Last 24 Hours</small></div>
+                    <h5 class="sales-item__percentage">-17%</h5><h3>1100</h3>
+                </div>
+
+                <div class="sales-item add-product">
+                    <div><span class="material-icons-sharp">add</span><h3>Add Product</h3></div>
                 </div>
             </div>
         </div>
-
+        </div>
 
     <script src="./js/main.js"></script>
 </body>
-
 </html>
