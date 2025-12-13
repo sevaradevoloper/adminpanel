@@ -66,3 +66,33 @@ sidebarMenuLinks.forEach((link) => {
         }
     });
 });
+
+
+
+
+
+
+const themeToggle = document.getElementById('themeToggle'); // Asosiy div element
+const lightMode = document.getElementById('lightMode');
+const darkMode = document.getElementById('darkMode');
+const body = document.body; // Butun sahifaning stilini o'zgartirish uchun
+
+
+themeToggle.addEventListener('click', () => {
+    // Agar hozirgi rejim Light Mode bo'lsa (ya'ni, uning ikonkasi aktiv bo'lsa)
+    if (lightMode.classList.contains('theme-toggler__icon--active')) {
+        // Dark Mode ga o'tish
+        body.classList.add('dark-theme-variables');
+
+        // Ikonka aktivligini almashtirish
+        lightMode.classList.remove('theme-toggler__icon--active');
+        darkMode.classList.add('theme-toggler__icon--active');
+    } else {
+        // Light Mode ga o'tish
+        body.classList.remove('dark-theme-variables');
+
+        // Ikonka aktivligini almashtirish
+        darkMode.classList.remove('theme-toggler__icon--active');
+        lightMode.classList.add('theme-toggler__icon--active');
+    }
+});
