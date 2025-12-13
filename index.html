@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <title>Admin Panel | SevaraDevoloper</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Admin Panel SevaraDevoloper</title>
 </head>
 <body>
     <div class="container">
         
-        <aside class="sidebar">
+        <aside class="sidebar" data-aos="fade-down-right"  data-aos-duration="1500">
             <div class="sidebar__top">
                 <div class="logo">
                     <span class="material-icons-sharp logo__image">computer</span>
@@ -68,7 +69,7 @@
                 </a>
             </div>
         </aside>
-        <main class="main-content">
+        <main class="main-content" data-aos="zoom-in-down"  data-aos-duration="1500">
             
             <section id="dashboard" class="content-section content-section--active">
                 <h1 class="main-content__heading">Dashboard</h1>
@@ -83,7 +84,7 @@
                             </div>
                             <div class="insight-card__progress">
                                 <svg class="insight-card__svg">
-                                    <circle class="insight-card__circle" cx="38" cy="38" r="36"></circle>
+                                    <circle class="insight-card__circle" cx="50" cy="50" r="36"  data-aos="zoom-in-up"  data-aos-duration="1100"></circle>
                                 </svg>
                                 <div class="insight-card__number"><p>81%</p></div>
                             </div>
@@ -100,7 +101,7 @@
                             </div>
                             <div class="insight-card__progress">
                                 <svg class="insight-card__svg">
-                                    <circle class="insight-card__circle" cx="38" cy="38" r="36" stroke-dashoffset="65"></circle>
+                                    <circle class="insight-card__circle" cx="50" cy="50" r="36" stroke-dashoffset="65"  data-aos="zoom-in-up"  data-aos-duration="1100"></circle>
                                 </svg>
                                 <div class="insight-card__number"><p>62%</p></div>
                             </div>
@@ -117,7 +118,7 @@
                             </div>
                             <div class="insight-card__progress">
                                 <svg class="insight-card__svg">
-                                    <circle class="insight-card__circle" cx="38" cy="38" r="36" stroke-dashoffset="100"></circle>
+                                    <circle class="insight-card__circle" cx="50" cy="50" r="36" stroke-dashoffset="100"  data-aos="zoom-in-up"  data-aos-duration="1100"></circle>
                                 </svg>
                                 <div class="insight-card__number"><p>44%</p></div>
                             </div>
@@ -128,11 +129,11 @@
                 <div class="recent-orders">
                     <h2 class="recent-orders__heading">Recent Orders</h2>
                     <table class="recent-orders__table">
-                        <thead><tr><th>Product Name</th><th>Product Number</th><th>Payment</th><th>Status</th><th></th></tr></thead>
+                        <thead data-aos="zoom-in-down"  data-aos-duration="1100"><tr><th>Product Name</th><th>Product Number</th><th>Payment</th><th>Status</th><th></th></tr></thead>
                         <tbody>
-                            <tr><td>Foldable Mini Drone</td><td>85631</td><td>Due</td><td class="status--warning">Pending</td><td>Details</td></tr>
-                            <tr><td>Larvender KN-55</td><td>36378</td><td>Refunded</td><td class="status--danger">Declined</td><td>Details</td></tr>
-                            <tr><td>Ruko F11 Pro Drone</td><td>49347</td><td>Paid</td><td class="status--success">Active</td><td>Details</td></tr>
+                            <tr data-aos="zoom-in-down"  data-aos-duration="1200"><td>Foldable Mini Drone</td><td>85631</td><td>Due</td><td class="status--warning">Pending</td><td>Details</td></tr>
+                            <tr data-aos="zoom-in-down"  data-aos-duration="1300"><td>Larvender KN-55</td><td>36378</td><td>Refunded</td><td class="status--danger">Declined</td><td>Details</td></tr>
+                            <tr data-aos="zoom-in-down"  data-aos-duration="1400"><td>Ruko F11 Pro Drone</td><td>49347</td><td>Paid</td><td class="status--success">Active</td><td>Details</td></tr>
                         </tbody>
                     </table>
                     <a href="#" class="recent-orders__show-all">Show All</a>
@@ -156,12 +157,12 @@
                     <span class="material-icons-sharp">menu</span>
                 </button>
 
-                <div class="theme-toggler" id="themeToggle">
+                <div class="theme-toggler" id="themeToggle" data-aos="fade-down"  data-aos-duration="1300">
                     <span class="theme-toggler__icon material-icons-sharp theme-toggler__icon--active" id="lightMode">light_mode</span>
                     <span class="theme-toggler__icon material-icons-sharp" id="darkMode">dark_mode</span>
                 </div>
 
-                <div class="profile">
+                <div class="profile" data-aos="fade-down-left"  data-aos-duration="1200">
                     <div class="profile__info">
                         <p>Hey, <b>Sevara</b></p>
                         <small class="profile__role">Admin</small>
@@ -171,17 +172,17 @@
                     </div>
                 </div>
             </div>
-            <div class="recent-updates">
+            <div class="recent-updates"  data-aos="zoom-in-down"  data-aos-duration="1000">
                 <h2 class="recent-updates__heading">Recent Updates</h2>
                 <div class="recent-updates__list">
-                    <div class="update-item">
+                    <div class="update-item"  data-aos="zoom-in-down"  data-aos-duration="1100">
                         <div class="update-item__photo"><img src="./img/user1.svg" alt=""></div>
                         <div class="update-item__message">
                             <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone.</p>
                             <small>2 minutes ago</small>
                         </div>
                     </div>
-                    <div class="update-item">
+                    <div class="update-item"  data-aos="zoom-in-down"  data-aos-duration="1200">
                         <div class="update-item__photo"><img src="./img/user2.svg" alt=""></div>
                         <div class="update-item__message">
                             <p><b>Sam Smith</b> received his order of Foldable Mini Drone.</p>
@@ -190,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sales-analytics">
+            <div class="sales-analytics"  data-aos="zoom-in-down"  data-aos-duration="1500">
                 <h2 class="sales-analytics__heading">Sales Analytics</h2>
                 <div class="sales-item online">
                     <div class="sales-item__icon-container"><span class="material-icons-sharp">shopping_cart</span></div>
@@ -210,7 +211,10 @@
             </div>
         </div>
         </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script src="./js/main.js"></script>
 </body>
 </html>

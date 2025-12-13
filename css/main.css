@@ -514,6 +514,7 @@ body {
 
     .sidebar {
         position     : fixed;
+        top: 0;
         left         : -100%;
         background   : var(--color-white);
         width        : 252px;
